@@ -1,0 +1,32 @@
+## Day 2 – Table, Field & Related List Creation
+
+*Objective:*  
+Design and build the custom table to store network request data and link it with approvals.
+
+*Work Completed:*
+- Created a custom table:
+  - Table Label: Network Database Table.
+  - Table Name: u_network_database_table.
+  - Application: Global.
+- Added fields to the table:
+  - Customer Address (String)
+  - Request Number (String)
+  - Requested For (String)
+  - Assignment Group (Reference → Group table)
+  - Work Status (String)
+  - Device Details (String)
+  - Updates (Integer)
+  - Assigned To (Reference → User table)
+  - Date Of Enquiry (Date)
+  - Customer Document (String)
+- Created a Relationship “Approval Request”:
+  - Applies To Table: Network Database Table.
+  - Queries From Table: Approval [sysapproval_approver].
+  - Added script to refine query so only approvals for that record show up.
+- Added the Approval Request related list to the Network Database Table form via Form Designer.
+- Verified that the related list appears correctly.
+
+*Deliverables:*
+- Update Set exported: Network Database Table module.
+- Screenshots saved in folder.
+- Documentation updated
